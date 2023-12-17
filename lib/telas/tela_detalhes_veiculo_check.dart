@@ -38,21 +38,14 @@ class _TelaDetalhesVeiculoCheckState
       body: _buildDetalheVeiculo1(veiculo),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          if (veiculo.idStatusVeiculo == 1) {
-            Navigator.of(context).pop();
-
-          } else if (veiculo.idStatusVeiculo == 2) {
-
-          } else {
-            _exibirSnackBar(context);
-          }
+          Navigator.of(context).pop();
         },
         child: veiculo.idStatusVeiculo == 1 || veiculo.idStatusVeiculo == 2
             ? Icon(Icons.arrow_back_ios_new)
             : Icon(Icons.block),
         tooltip: veiculo.idStatusVeiculo == 1
             ? 'Voltar'
-            : 'Indisponível',
+            : 'Voltar',
       ),
     );
   }
