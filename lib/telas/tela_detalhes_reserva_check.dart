@@ -36,7 +36,7 @@ class _TelaDetalhesReservaCheckState
             : Icon(Icons.block),
         tooltip: reserva.idStatusReserva == 1
             ? 'Voltar'
-            : 'Indisponível',
+            : 'Voltar',
       ),
     );
   }
